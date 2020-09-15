@@ -9,7 +9,7 @@ fn main() {
     s.clear();
 
     println!("s: '{}'", s);
-    // println!("word: {}", word); //would result in a compiler error, because word is a immutable reference and s has changed in the meantime
+    // println!("word: {}", word); //would result in a compiler error, because 'word' is an immutable reference and 's' has changed in the meantime
 }
 
 fn first_word(s: &String) -> &str {
